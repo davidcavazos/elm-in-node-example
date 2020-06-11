@@ -52,13 +52,13 @@ To run a server, we need to compile it with Elm and run it with node.
 Don't worry, Elm is very fast at compiling so it should compile and run almost instantly.
 
 ```sh
-elm make src/Main.elm --output build/main.js && node build/run.js
+elm make src/Main.elm --output example/main.js && node example/run.js
 ```
 
 Here's a small summary of what's happening:
 
-1. Elm compiles into Javascript to the file [`build/main.js`](build/main.js).
-1. We created the file [`build/run.js`](build/run.js), and we run it with node.
+1. Elm compiles into Javascript to the file [`example/main.js`](example/main.js).
+1. We created the file [`example/run.js`](example/run.js), and we run it with node.
 1. Node imports and loads the compiled Elm application.
 1. First, we print how Elm's ports look like.
 1. Then, we subscribe to an Elm port, and send a message to another port.
@@ -69,7 +69,7 @@ Here's a small summary of what's happening:
 ```txt
 Success!
 
-    Main ───> build/main.js
+    Main ───> example/main.js
 
 Compiled in DEV mode. Follow the advice at https://elm-lang.org/0.19.1/optimize for better performance and smaller assets.
 {
